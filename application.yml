@@ -1,24 +1,15 @@
 spring:
-  profiles:
-    active:
-      - test
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com:fypshencheng/spring-cloud-congfig-server-demo.git
+ profiles:
+  active:
+   - dev
 
 ---
 spring:
-  profiles: dev
-  application:
-    name: config-server-dev
-  server:
-    port: 9090
+ profiles: dev
+ application:
+  name: microservicecloud-config-atguigu-dev
 ---
 spring:
-  profiles: test
-  application:
-    name: config-server-test
-  server:
-    port: 9091
+ profiles: test
+ application:
+  name: microservicecloud-config-atguigu-test
