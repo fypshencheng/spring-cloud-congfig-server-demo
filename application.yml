@@ -11,3 +11,13 @@ spring:
           uri: git@github.com:fypshencheng/spring-cloud-congfig-server-demo.git
 server:
   port: 9090
+---
+spring:
+ profiles: dev
+ application:
+  name: config-server
+---
+spring:
+ profiles: test
+ application:
+  name: config-server
