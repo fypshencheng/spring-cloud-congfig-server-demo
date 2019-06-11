@@ -2,11 +2,11 @@
 
 spring:
   application:
-    name: config-server
+    name: config-server-test
   cloud:
     config:
       server:
         git:
           uri: git@github.com:fypshencheng/spring-cloud-congfig-server-demo.git
 server:
-  port: 9090
+  port: 9091
